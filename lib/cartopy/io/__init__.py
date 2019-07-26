@@ -29,11 +29,7 @@ import string
 import warnings
 
 import six
-
-if six.PY3:
-    from urllib.request import urlopen
-else:
-    from urllib2 import urlopen
+from six.moves.urllib.request import urlopen
 
 from cartopy import config
 
